@@ -2,10 +2,10 @@ package ru.mirea.lab12.ex1;
 
 import java.util.Stack;
 
-public class Game1 {
+public class Game {
     Stack<Integer> fp, sp;
 
-    public Game1(String fp, String sp) {
+    public Game(String fp, String sp) {
         this.fp = new Stack<>();
         this.sp = new Stack<>();
         for(int i = 4; i >= 0; i --){
@@ -45,9 +45,9 @@ public class Game1 {
     }
 
     public static void main(String[] args) {
-        System.out.println(new Game1("13579", "24680").play());
-        System.out.println(new Game1("12345", "67890").play());
-        System.out.println(new Game1("13029", "42685").play());
+        System.out.println(new Game("13579", "24680").play());
+        System.out.println(new Game("12345", "67890").play());
+        System.out.println(new Game("13029", "42685").play());
     }
 
 }

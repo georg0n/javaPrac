@@ -1,4 +1,5 @@
 package ru.mirea.lab9.two;
 
-public class Priceable {
+public interface Priceable {
+    double getPrice(); // метод для получения цены
 }

@@ -2,10 +2,10 @@ package ru.mirea.lab12.ex4;
 
 import java.util.LinkedList;
 
-public class Game4 {
+public class Game {
     LinkedList<Integer> fp, sp;
 
-    public Game4(String fp, String sp) {
+    public Game(String fp, String sp) {
         this.fp = new LinkedList<>();
         this.sp = new LinkedList<>();
         for(int i = 0; i < 5; i ++){
@@ -38,9 +38,9 @@ public class Game4 {
     }
 
     public static void main(String[] args) {
-        System.out.println(new Game4("13579", "24680").play());
-        System.out.println(new Game4("12345", "67890").play());
-        System.out.println(new Game4("13029", "42685").play());
+        System.out.println(new Game("13579", "24680").play());
+        System.out.println(new Game("12345", "67890").play());
+        System.out.println(new Game("13029", "42685").play());
     }
 
 }

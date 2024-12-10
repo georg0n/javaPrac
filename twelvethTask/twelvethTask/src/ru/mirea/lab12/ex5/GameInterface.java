@@ -1,6 +1,6 @@
-package ru.mirea.lab12;
+package ru.mirea.lab12.ex5;
 
-import ru.mirea.ikbo1218.grachev.ex2.Game;
+import ru.mirea.lab12.ex2.Game;
 import javax.swing.*;
 import java.awt.*;
 

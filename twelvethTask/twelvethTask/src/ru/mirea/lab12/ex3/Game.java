@@ -3,10 +3,10 @@ package ru.mirea.lab12.ex3;
 import java.util.ArrayDeque;
 import java.util.Deque;
 
-public class Game3 {
+public class Game {
     Deque<Integer> fp, sp;
 
-    public Game3(String fp, String sp) {
+    public Game(String fp, String sp) {
         this.fp = new ArrayDeque<>();
         this.sp = new ArrayDeque<>();
         for(int i = 0; i < 5; i ++){
@@ -38,9 +38,9 @@ public class Game3 {
     }
 
     public static void main(String[] args) {
-        System.out.println(new Game3("13579", "24680").play());
-        System.out.println(new Game3("12345", "67890").play());
-        System.out.println(new Game3("13029", "42685").play());
+        System.out.println(new Game("13579", "24680").play());
+        System.out.println(new Game("12345", "67890").play());
+        System.out.println(new Game("13029", "42685").play());
     }
 
 }
