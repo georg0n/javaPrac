@@ -1,0 +1,40 @@
+
++---------------------+
+|MVCPatternDemo       |
++---------------------+
+|                     |
++---------------------+
+|+main() :void        |
+|+retriveStudentFromDa|
+|tabase() :Student    |
++---------------------+
+         \
+          \ uses
+           \
+       +----------------------------+
+       |StudentController           |
+       +----------------------------+
+       | -model: student            |
+       | -view: StudentView         |
+       +----------------------------+
+       | +StudentController()       |
+       | +setStudentName() :void    |
+       | +getStudentName() :String  |
+       | +setStudentRollNo() :void  |
+       | +getStudentRollNo() :String|
+       | +updateView() :void        |
+       +----------------------------+
+        /                            \
+       / updates                      \ uses
+      /                                \
++-----------------------------+       +---------------------+
+| StudentView                 |       |   Student           |
++-----------------------------+       +---------------------+
+|                             |       | -rollNo :String     |
+|                             |       | -name: String       |
++-----------------------------+       +---------------------+
+| +printStudentDetails(): void|       | +getName() :String  |
+|                             |       | +setName() :void    |
+|                             |       | +getRollNo() :String|
+|                             |       | +setRollNo() :void  |
++-----------------------------+       +---------------------+
